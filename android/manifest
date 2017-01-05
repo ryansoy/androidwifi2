@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+description: androidwifi2
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2015 by Your Company
+
+# these should not be edited
+name: androidwifi2
+moduleid: com.restado.androidwifi2
+guid: 3aa014d5-8c54-4723-8a56-c73ce49ad213
+platform: android
+minsdk: 3.4.1.GA
