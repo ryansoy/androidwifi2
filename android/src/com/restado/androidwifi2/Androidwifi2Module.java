@@ -76,6 +76,7 @@ public class Androidwifi2Module extends KrollModule
 	
 	@Kroll.method
 	public String getWifiState() {
+	
 		TiApplication context = TiApplication.getInstance();
 		//ConnectivityManager connManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 		
@@ -111,18 +112,18 @@ public class Androidwifi2Module extends KrollModule
 	
 	@Kroll.method
 	public void turnWifiOn() {
-    	TiApplication context = TiApplication.getInstance();		
+	
+    		TiApplication context = TiApplication.getInstance();		
 		WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-	    wifiManager.setWifiEnabled(true);
-    //    wifiManager.setWifiEnabled(false);
+	        wifiManager.setWifiEnabled(true);
 	}  
 	
 	@Kroll.method
 	public void turnWifiOff() {
-    	TiApplication context = TiApplication.getInstance();		
+	
+	    	TiApplication context = TiApplication.getInstance();		
 		WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-	    wifiManager.setWifiEnabled(false);
-    //    wifiManager.setWifiEnabled(false);
+	        wifiManager.setWifiEnabled(false);
 	} 
 }
 		/*
