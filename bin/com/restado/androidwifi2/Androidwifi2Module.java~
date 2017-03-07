@@ -171,11 +171,20 @@ public class Androidwifi2Module extends KrollModule
 	}
 	
 }
-/*
+
 ConnectivityManager connManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 NetworkInfo mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+public String getSSID()
+	if (mWifi.isConnected()) {
+	    // Do whatever
+	    TiApplication context = TiApplication.getInstance();
+	     //ConnectivityManager connManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-if (mWifi.isConnected()) {
-    // Do whatever
+	    WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);	    
+	    WifiInfo info = wifiManager.getConnectionInfo ();
+	    String ssid  = info.getSSID();
+	    return ssid;
+	}
+	return "Unknow";
 }
-*/
+
